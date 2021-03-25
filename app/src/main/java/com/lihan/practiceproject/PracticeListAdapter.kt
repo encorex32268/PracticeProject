@@ -6,7 +6,7 @@ import androidx.recyclerview.widget.RecyclerView
 
 class PracticeListAdapter(var practices : ArrayList<String>) : RecyclerView.Adapter<PracticeListViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PracticeListViewHolder {
-        return PracticeListViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.item_practicelist,null))
+        return PracticeListViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.item_practicelist,parent,false))
     }
 
     override fun getItemCount() = practices.size
